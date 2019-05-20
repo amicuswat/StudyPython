@@ -1,4 +1,5 @@
 books = [
+    "Learning Python: Powerful Object-Oriented Programming - Mark Lutz",
     "Automate the Boring Stuff with Python: Practical Programming for Total Beginners - Al Sweigart",
     "Python for Data Analysis - Wes McKinney",
     "Fluent Python: Clear, Concise, and Effective Programming - Luciano Ramalho",
@@ -6,4 +7,4 @@ books = [
     "Hello Web App: Learn How to Build a Web App - Tracy Osborn",
 ]
 
-print("Suggetsted gift")
+print("Suggetsted gift: {}".format(books[0]))
