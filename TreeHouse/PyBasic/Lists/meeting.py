@@ -9,3 +9,9 @@ for attendee in attendees:
     print(attendee)
 
 print("Ashley" in attendees)
+
+to_line = ", ".join(attendees)
+cc_line = ", ".join(optional_invitees)
+
+print("To: " + to_line)
+print("Cc:", cc_line)
