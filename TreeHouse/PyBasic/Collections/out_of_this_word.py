@@ -6,6 +6,7 @@ WORDS = (
     "learner"
 )
 
+
 def prompt_for_words(challenge):
     guesses = set()
     print("What words can you find in the word '{}'.".format(challenge))
@@ -14,13 +15,25 @@ def prompt_for_words(challenge):
         guess = input("{} words > ".format(len(guesses)))
         if guess.upper() == "Q":
             break
-        guesses.add(guess.lower())
+        if word_is_legible(guess, challenge):
+            guesses.add(guess.lower())
     return guesses
 
 
 def output_results(results):
     for word in results:
         print("* " + word)
+
+
+def word_is_legible(word_to_check, control_word):
+    control = list(control_word)
+    for letter in word_to_check:
+        if letter in control:
+            control.remove(letter)
+        else:
+            return False
+    return True
+
 
 challenge_word = random.choice(WORDS)
 
