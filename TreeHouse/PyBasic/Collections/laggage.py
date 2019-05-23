@@ -10,3 +10,9 @@ def unpacker(first_name=None, last_name=None):
 
 packer(name="Viktor", num=42, spanish_inquisition=None)
 unpacker(**{"last_name":"Kuryshev", "first_name":"Viktor"})
+
+course_minutes = {"Python Basics":232, "Jango Basics":237,
+"Flask Basics":189, "Java Basics":133}
+
+for course, minutes in course_minutes.items():
+    print("{} is {} minutes long".format(course, minutes))
