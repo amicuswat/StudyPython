@@ -1,8 +1,7 @@
 import logging
 import random
 
-logging.info("You won't see this")
-logging.warn("Oh no")
+logging.basicConfig(filename='game.log', level=logging.DEBUG )
 
 player = {'location': None, 'path': []}
 cells = [(0, 0), (0, 1), (0, 2),
