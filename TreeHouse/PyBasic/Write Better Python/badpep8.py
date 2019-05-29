@@ -1,7 +1,7 @@
 # multiple imports
 def fooBar(arg1,arg2,arg3,arg4):
-         # way too much indentation
-         return arg1,arg2,arg3,arg4
+    # way too much indentation
+    return arg1,arg2,arg3,arg4
 
 
 def bar(*args):
@@ -11,17 +11,17 @@ def bar(*args):
 
 # Bad class name, bad spacing, bad indentation
 class treehouse:
-   def one(self):
-      return 1
-   def two(self):
-      return 2
+    def one(self):
+        return 1
+    def two(self):
+        return 2
 
 import sys, random
 
 
 # bad identation and whitespace
 a,b,c,d=fooBar ( "a long string","a longer string","yet another long string",
-  "and other crazy string"
+    "and other crazy string"
     )
 
 
