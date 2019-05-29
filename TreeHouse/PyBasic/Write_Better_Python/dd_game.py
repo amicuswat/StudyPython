@@ -67,6 +67,8 @@ def draw_map():
 
 
 monster, door, player['location'] = get_locations()
+logging.info("monster: {}; door: {}; player: {}".format(
+            monster, door, player['location']))
 
 while True:
     moves = get_moves(player['location'])
