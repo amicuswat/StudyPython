@@ -15,5 +15,3 @@
 #
 #      102.54.94.97     rhino.acme.com          # source server
 #       38.25.63.10     x.acme.com              # x client host
-127.0.0.1 www.facebook.com
-127.0.0.1 facebook.com
