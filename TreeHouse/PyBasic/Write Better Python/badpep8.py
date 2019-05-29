@@ -21,13 +21,15 @@ class treehouse:
 
 
 # bad identation and whitespace
-a, b, c, d=fooBar("a long string", "a longer string", "yet another long string",
-    "and other crazy string")
+a, b, c, d=fooBar("a long string",
+                  "a longer string",
+                  "yet another long string",
+                  "and other crazy string")
 
 
 # bad spacing
-one      = 1
-three    = 3
+one = 1
+three = 3
 fourteen = 14 # make fourteen equal to 12
 
 print(a)
