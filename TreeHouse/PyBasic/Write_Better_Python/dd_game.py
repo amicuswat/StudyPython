@@ -1,4 +1,8 @@
+import logging
 import random
+
+logging.info("You won't see this")
+logging.warn("Oh no")
 
 player = {'location': None, 'path': []}
 cells = [(0, 0), (0, 1), (0, 2),
