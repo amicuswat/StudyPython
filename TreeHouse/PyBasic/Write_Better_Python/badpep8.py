@@ -1,6 +1,3 @@
-import sys
-import random
-
 # multiple imports
 def foo_bar(arg1, arg2, arg3, arg4):
     # way too much indentation
@@ -16,23 +13,24 @@ def bar(*args):
 class Treehouse:
     def one(self):
         return 1
+
     def two(self):
         return 2
 
 
 # bad identation and whitespace
 alpha, betta, charlie, delta = foo_bar("a long string",
-                  "a longer string",
-                  "yet another long string",
-                  "and other crazy string")
+                                       "a longer string",
+                                       "yet another long string",
+                                       "and other crazy string")
 
 
 # bad spacing
 one = 1
 three = 3
-fourteen = 14 # make fourteen equal to 12
+fourteen = 14  # make fourteen equal to 12
 
 print(alpha)
 print(fourteen)
 
-print(treehouse().two())
+print(Treehouse().two())
