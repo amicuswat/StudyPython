@@ -9,7 +9,11 @@ app = Flask(__name__)
 # if we change '/' to '/about/' the site will be accessed at localhost:5000/about
 @app.route('/')
 def home():
-    return "Website content goes here!"
+    return "This is a home page!"
+
+@app.route('/about')
+def about():
+    return "This is About page!"
 
 # bellow lines will not run if we import the script as the __name__ will be "script1"
 # they run only if we execute this script so the __name__ will be "__main__"
