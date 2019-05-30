@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 
 #__name__ is a special variable that receives the name of python script
 # if we import this script the __name__ will be script1
@@ -9,7 +9,7 @@ app = Flask(__name__)
 # if we change '/' to '/about/' the site will be accessed at localhost:5000/about
 @app.route('/')
 def home():
-    return "This is a home page!"
+    return render_template("home.html")
 
 @app.route('/about')
 def about():
