@@ -13,7 +13,7 @@ def home():
 
 @app.route('/about')
 def about():
-    return "This is About page!"
+    return render_template("about.html")
 
 # bellow lines will not run if we import the script as the __name__ will be "script1"
 # they run only if we execute this script so the __name__ will be "__main__"
