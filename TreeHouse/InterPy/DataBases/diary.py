@@ -1,5 +1,6 @@
 from collections import OrderedDict
 import datetime
+import sys
 
 from peewee import *
 
@@ -36,6 +37,13 @@ def menu_loop():
 
 def add_entry():
     """Add an entry."""
+    print("Enter your entry. Press ctrl + d when finished")
+    data = sys.stdin.read().strip()
+
+    if data:
+        if input('Save entry? [y/n] ').lower() != 'n':
+            Entry.create(content=data)
+            print("Saved succesfully")
 
 
 def view_entries():
