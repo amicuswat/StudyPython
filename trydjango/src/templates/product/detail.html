@@ -1,7 +1,10 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1> {{title}} </h1>
-{{description|safe}} 
-
+<h1> {{object.title}} </h1>
+{% if object.description %}
+{{object.description|safe}} 
+{% else %}
+<p><i>Description comming soon...<i></p>
+{% endif %}
 {% endblock %}
