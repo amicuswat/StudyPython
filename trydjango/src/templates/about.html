@@ -10,7 +10,12 @@
 </p>
 <ul>
 {% for item in my_list %}
-<li>{{forloop.counter}} - {{item}}</li>
+	{% if item == 321 %}
+	<li>{{forloop.counter}} - {{item|add:22}}</li>
+	{% else %}
+	<li>{{forloop.counter}} - {{item}}</li>
+	{% endif %}
+
 {% endfor %}
 </ul>
 {% endblock %}
