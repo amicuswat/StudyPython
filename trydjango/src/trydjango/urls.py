@@ -20,12 +20,13 @@ from pages.views import home_view
 from pages.views import contacts_view
 from pages.views import about_view
 from pages.views import social_view
-from products.views import product_detail_view
+from products.views import product_detail_view, product_create_view 
 
 urlpatterns = [
     path('', home_view, name='home'),
     path('contacts/', contacts_view, name='contacts'),
     path('about/', about_view, name='about'),
+    path('create/', product_create_view, name='create'),
     path('product/', product_detail_view, name='product'),
     path('admin/', admin.site.urls),
 ]
