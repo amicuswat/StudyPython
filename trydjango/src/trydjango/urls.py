@@ -24,15 +24,19 @@ from products.views import (
     # product_detail_view,
     # product_create_view,
     # render_initial_data,
-    dynamic_lookup_view
+    dynamic_lookup_view,
+    product_delete_view,
+    product_list_view
     )
 
 urlpatterns = [
+    path('products/<int:id>/delete', product_delete_view, name='product-delete'),
     path('products/<int:id>/', dynamic_lookup_view, name='product'),
-    # path('', home_view, name='home'),
+    path('', home_view, name='home'),
+    path('products/', product_list_view, name="product_list" ),
     # path('contacts/', contacts_view, name='contacts'),
     # path('about/', about_view, name='about'),
     # path('create/', render_initial_data, name='create'),
     # path('product/', product_detail_view, name='product'),
-    # path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls),
 ]
