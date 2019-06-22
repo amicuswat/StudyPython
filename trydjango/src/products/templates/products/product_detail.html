@@ -3,8 +3,9 @@
 {% block content %}
 <h1>In App template: {{object.title}} </h1>
 {% if object.description %}
-{{object.description|safe}} 
+{{object.description|safe}}
 {% else %}
 <p><i>Description comming soon...<i></p>
 {% endif %}
+<p>Price - {{object.price}}</p>
 {% endblock %}
