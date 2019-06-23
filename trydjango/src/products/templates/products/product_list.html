@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% for instance in object_list %}
+<!--  <p>{{ instance.id }} -<a href='/products/{{ instance.id }}'> {{ instance.title }}</a></p>
+-->
+<p style="
+    background-color: #2196F3;
+    box-shadow: 0 0 5px 4px black;
+    width: 300px;
+    height: 25px;
+    padding-top: 10px;
+    color: #af4c59;
+    padding-left: 10px;
+    margin-left: 30%;
+    margin-right: 30%;
+    ">{{ instance.id }} -<a href='{{ instance.get_absolute_url }}'> {{ instance.title }}</a></p>
+
+{% endfor %}
+
+{% endblock %}
