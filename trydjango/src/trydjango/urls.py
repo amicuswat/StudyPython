@@ -22,7 +22,7 @@ from pages.views import about_view
 from pages.views import social_view
 
 urlpatterns = [
-
+    path('blog/', include('blog.urls')),
     path('products/', include('products.urls')),
     path('', home_view, name='home'),
     path('contacts/', contacts_view, name='contacts'),
