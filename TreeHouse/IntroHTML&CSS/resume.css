@@ -1,0 +1,17 @@
+body {
+    font-family: "Arial";
+}
+
+.main-image {
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+h1 {
+    background-color: gainsboro;
+    padding: 5px;
+}
+
+.section-title {
+    text-transform: uppercase;
+}
